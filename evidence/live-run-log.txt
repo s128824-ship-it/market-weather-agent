@@ -1,0 +1,22 @@
+Market Weather Agent — LIVE RUN LOG
+Run finished (UTC): 2026-11-18T01:27:07Z
+Mode: live keyless
+
+/v3/fear-and-greed/latest [keyless] HTTP 200 ok=True error_code=0
+  summary: Fear & Greed = 13 (Extreme fear)
+/v3/fear-and-greed/historical?limit=30 [keyless] HTTP 200 ok=True error_code=0
+  summary: 30 daily points; 7d-ago=26, delta7=-13
+/v1/global-metrics/quotes/latest?convert=USD [keyless] HTTP 200 ok=True error_code=0
+  summary: total mcap=$2,192,169,932,497, BTC dominance=59.15%, mcap 24h change=+0.20%
+/v1/cryptocurrency/listings/latest?start=1&limit=100&convert=USD [keyless] HTTP 200 ok=True error_code=0
+  summary: top 100 coins; breadth 74.0% up; top gainer JUP +8.46%
+/v1/altcoin-season-index/latest [keyless] HTTP 200 ok=True error_code=0
+  summary: Altcoin Season Index = 52/100 (Mixed season)
+/v3/index/cmc100-latest [keyless] HTTP 200 ok=True error_code=0
+  summary: CMC100 = 125.52 (+0.22% 24h)
+/v1/cryptocurrency/trending/latest [keyless] HTTP 403 ok=False error_code=1005
+  note: plan/key not authorised for this endpoint (HTTP 403, error 1005): An API Key is required for this call.
+  summary: not retrieved — plan-gated; fallback note written into brief
+
+Missing sections: none
+Anomalies: ['Fear & Greed swung -13 points in 7 days (26 -> 13).']

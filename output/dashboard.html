@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Weather — Storm</title>
+<style>
+body{font-family:system-ui,sans-serif;margin:2rem auto;max-width:860px;padding:0 1rem;background:#0f1420;color:#e8ecf4}
+.card{background:#1a2133;border-radius:12px;padding:1.2rem;margin:1rem 0}
+.gauge{background:linear-gradient(90deg,#b03a2e,#e67e22,#f1c40f,#82e0aa,#27ae60);height:22px;border-radius:11px;position:relative}
+.marker{position:absolute;top:-4px;width:6px;height:30px;background:#fff;border-radius:3px;left:calc(9% - 3px)}
+.big{font-size:2.4rem;font-weight:700}
+table{width:100%;border-collapse:collapse}td,th{padding:.35rem .5rem;border-bottom:1px solid #2c3852;text-align:left}
+.pos{color:#7dffa8}.neg{color:#ff8a8a}code{color:#9fc1ff}footer{color:#8b96ad;font-size:.85rem}
+</style></head><body>
+<h1>🌦️ Market Weather</h1>
+<p>Generated: 2026-11-24 09:03 UTC / 2026-11-24 18:03 JST · Mode: live keyless</p>
+<div class="card"><div class="big">Storm — Extreme fear</div>
+<p>Fear &amp; Greed gauge (0 = Extreme fear, 100 = Extreme greed): <b>9</b></p>
+<div class="gauge"><div class="marker"></div></div></div>
+<div class="card"><h2>Key figures</h2>
+<p>Total market cap: <b>$2.06T</b> · BTC dominance: <b>58.50%</b><br>
+Breadth (top 100, 24h): <b>43.0% up (43/100)</b> · Altcoin Season: <b>59/100 (Mixed season)</b> · CMC100: <b>117.46 (-1.85% 24h)</b></p></div>
+<div class="card"><h2>Top gainers (24h, vol ≥ $1M)</h2>
+<table><tr><th>Coin</th><th>24h %</th><th>Price</th><th>Volume</th></tr>
+<tr><td>ATOM</td><td class='pos'>+9.44%</td><td>$1.30</td><td>$42.6M</td></tr>
+<tr><td>币安人生</td><td class='pos'>+5.20%</td><td>$0.47</td><td>$3.4M</td></tr>
+<tr><td>VET</td><td class='pos'>+4.25%</td><td>$0.00</td><td>$13.0M</td></tr>
+<tr><td>FF</td><td class='pos'>+3.52%</td><td>$0.11</td><td>$6.0M</td></tr>
+<tr><td>STABLE</td><td class='pos'>+3.37%</td><td>$0.02</td><td>$7.2M</td></tr></table></div>
+<div class="card"><h2>Top losers (24h, vol ≥ $1M)</h2>
+<table><tr><th>Coin</th><th>24h %</th><th>Price</th><th>Volume</th></tr>
+<tr><td>PIEVERSE</td><td class='neg'>-12.34%</td><td>$3.14</td><td>$218.6M</td></tr>
+<tr><td>ZRO</td><td class='neg'>-11.60%</td><td>$1.08</td><td>$99.5M</td></tr>
+<tr><td>ZEC</td><td class='neg'>-5.44%</td><td>$751.04</td><td>$1.0B</td></tr>
+<tr><td>WLFI</td><td class='neg'>-5.32%</td><td>$0.04</td><td>$63.3M</td></tr>
+<tr><td>ETHFI</td><td class='neg'>-5.21%</td><td>$0.48</td><td>$30.6M</td></tr></table></div>
+<div class="card"><h2>Anomalies</h2><ul><li>None detected.</li></ul><p>Trending section unavailable: /v1/cryptocurrency/trending/latest requires the Startup plan or above (no CMC_API_KEY in this run). Fallback applied — brief generated without it. Detail: plan/key not authorised for this endpoint (HTTP 403, error 1005): An API Key is required for this call.</p>
+<p>Missing sections: none</p></div>
+<div class="card"><h2>Evidence — endpoints called</h2><ul><li><code>`/v3/fear-and-greed/latest` [keyless] HTTP 200 OK</code></li>
+<li><code>`/v3/fear-and-greed/historical?limit=30` [keyless] HTTP 200 OK</code></li>
+<li><code>`/v1/global-metrics/quotes/latest?convert=USD` [keyless] HTTP 200 OK</code></li>
+<li><code>`/v1/cryptocurrency/listings/latest?start=1&amp;limit=100&amp;convert=USD` [keyless] HTTP 200 OK</code></li>
+<li><code>`/v1/altcoin-season-index/latest` [keyless] HTTP 200 OK</code></li>
+<li><code>`/v3/index/cmc100-latest` [keyless] HTTP 200 OK</code></li>
+<li><code>`/v1/cryptocurrency/trending/latest` [keyless] HTTP 403 FAILED — plan/key not authorised for this endpoint (HTTP 403, error 1005): An API Key is required for this call.</code></li></ul></div>
+<footer>Experimental hackathon project. Not financial advice.</footer>
+</body></html>

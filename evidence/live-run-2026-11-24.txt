@@ -1,0 +1,18 @@
+Market Weather Agent — LIVE RUN LOG (refresh)
+Run finished (JST): 2026-11-24 18:03 JST / 09:03 UTC
+Mode: live keyless (no API key)
+
+Command: python3 agent.py
+Result: outputs written to output/ (brief.md, brief_ja.md, dashboard.html)
+Regime: Storm (Extreme fear, F&G 9)
+Missing sections: none
+
+Key figures (each backed by the endpoint named in output/brief.md):
+- Fear & Greed = 9 (Extreme fear), 7d delta -4 — /v3/fear-and-greed/latest + /v3/fear-and-greed/historical
+- Total market cap $2.06T (-1.70% 24h), BTC dominance 58.50% — /v1/global-metrics/quotes/latest
+- Breadth: 43.0% of top 100 up — /v1/cryptocurrency/listings/latest
+- Altcoin Season Index 59/100 — /v1/altcoin-season-index/latest
+- CMC100 117.46 (-1.85% 24h) — /v3/index/cmc100-latest
+- Trending (keyed, Startup+): not called in keyless mode; brief carries the fallback note by design.
+
+Unit tests on the same day: 19/19 passed (python3 -m unittest discover -s tests).
